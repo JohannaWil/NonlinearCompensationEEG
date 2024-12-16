@@ -11,7 +11,7 @@ There are ethical restrictions on sharing the data set. The consent given by par
 This repository contains the following data:
 * `EEG.mat` - EEG data from one trial to illustrate the binning-based nonlinearity detection and compensation method.
 * `data.mat`:
-  * `TRFdata` - from Eelbrain boosting algorithm in Python
+  * `TRFdata` - from Eelbrain boosting algorithm in Python.
   * `channelGroups` - information about the 6 channel groups (left temporal, frontal, right temporal, central, parietal, occipital).
   * `snr` - snr values from the original and the compensated EEG data.
   * `compensationData` - TRFs and information of the compensated EEG data (after the nonlinear compensation method has been used).
@@ -21,7 +21,7 @@ This repository contains the following data:
   * `labels` - channel labels.
 * `significanceData_author.mat` - Results by the author from Fieldtrip's permutation test based on t-statistics. Averaged across all channels.
 * `significanceData_chGroups_author.mat` - Results by the author from Fieldtrip's permutation test based on t-statistics. Average within each channel group.
-* simDelay_data1.wav and simDelay_data2.wav - audio recordings in the experimental setup, for computations of time delays in the stimulus.
+* `simDelay_data1.wav` and `simDelay_data2.wav` - audio recordings in the experimental setup, for computations of time delays in the stimulus.
 
 #  Code overview
 
@@ -31,7 +31,23 @@ The repository contains two main Matlab scripts:
 
 *  `main_Plotting.m` - Plotting scripts for Figures 4-10 in [2].
 
-Help functions are provided in the folder `helpFunctions`
+Help functions are provided in the folder `helpFunctions`.
+
+Configuration settings are stored in `config.json`:
+
+* `datadir = ""` Add path to data directory.
+* `fieldtripdir = ""` Add path to Fieldtrip directory.
+* `saveFolder = ""` Add path to where figures will be saved. 
+* `nBins = 3` Number of bins used in the nonlinear compensation and detection method.
+* `nOutliers = 20` Number of outliers in the nonlinear compensation and detection method.
+* `indices_per_bin = 400` Number of indices in each bin in the nonlinear compensation and detection method.
+* `figPosition` Figure position.
+* `numrandomization = 1000` User-specific number of random draws (Fieldtrip's permutation test based on t-statistics).
+* `conditions = ["Ton","Mon","Toff","Moff"]` Target NRon, Masker NRon, Target NRoff, Masker NRoff.
+* `minnbchan` Minimum number of neighborhodd channels (Fieldtrip's permutation test based on t-statistics).
+* `computeSignificance = false` Perform the permutation test based on t-statistics (true) or use the pre-computed statistics by the author (false).
+* `saveFigures = false` Save figures (true) or do not save figures (false).
+* `colors` Colors used in the figures.
 
 #  Requirements
 
