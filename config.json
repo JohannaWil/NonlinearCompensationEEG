@@ -1,0 +1,15 @@
+{
+    "datadir": "E:\\Data\\FUSA\\official\\selected",
+    "fieldtripdir": "E:\\Programs",
+    "saveFolder": "December_10_1615",
+    "nBins":3,
+    "nOutliers":20,
+    "indices_per_bin":400,
+    "figPosition": [20,950,1900,1100],
+    "numrandomization": 1000,
+    "conditions": ["Ton","Mon","Toff","Moff"],
+    "minnbchan": 3,
+    "computeSignificance": false,
+    "saveFigures": false,
+    "colors": [[0, 0.4470, 0.7410], [0.8500, 0.3250, 0.0980], [0.9290, 0.6940, 0.1250], [0.4940, 0.1840, 0.5560], [0.4660, 0.6740, 0.1880], [0.3010, 0.7450, 0.9330]]
+}

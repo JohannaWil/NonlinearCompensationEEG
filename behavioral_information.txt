@@ -1,0 +1,18 @@
+***********************************************
+Information about behavioural data structure.
+***********************************************
+
+The experiment involved 32 hearing-impaired (HI) participants wearing hearing aids (HAs) with either: 
+
+NRon:  Noise reduction (NR) algorithms turned on, or
+NRoff: Noise reduction (NR) algorithms turned off.
+
+Due to bad data quality 2 participants (#14 and #22) are excluded from the data analysis.
+After each trial, the participant answerd a yes/no question about the content of the target speaker.
+Behavioural data structure (for each subject and each condition (NRon, NRoff)):
+
+Column 1: Correct answer to the question.
+Column 2: Participant's answer to the question.
+Column 3: Correct answer (1), or incorrect answer (0).
+
+Each row represent one trial.
