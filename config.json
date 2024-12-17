@@ -1,7 +1,6 @@
 {
-    "datadir": "E:\\Data\\FUSA\\official\\selected",
-    "fieldtripdir": "E:\\Programs",
-    "saveFolder": "December_10_1615",
+    "fieldtripdir": "",
+    "saveFolder": "",
     "nBins":3,
     "nOutliers":20,
     "indices_per_bin":400,
