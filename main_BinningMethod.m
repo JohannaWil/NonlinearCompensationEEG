@@ -39,6 +39,4 @@ load('labels.mat')
 config.todaysdate = todaysdate;
 config.saveFolder = todaysdate; % Folder to save figures
 
-%%
-close all;
 cfg = nonlinMethod(Yorig, Yhat, labels, config);
