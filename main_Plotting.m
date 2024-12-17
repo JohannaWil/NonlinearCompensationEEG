@@ -18,8 +18,6 @@ addpath(config.fieldtripdir)
 addpath('helpFunctions\')
 addpath('Data\')
 addpath('plot_topography\')
-%addpath('C:\Users\johwi26\repos\binningMethod\plot_topography')
-%addpath('E:\Programs\Fieldtrip')
 
 % Load data
 load('data.mat')
