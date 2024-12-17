@@ -37,9 +37,10 @@ The repository contains two main Matlab scripts:
 
 Help functions are provided in the folder `helpFunctions`.
 
+Function to plot topographical maps of the head are provided in `plot_topography`, by [3].
+
 Configuration settings are stored in `config.json`:
 
-* `datadir = ""` Add path to data directory.
 * `fieldtripdir = ""` Add path to Fieldtrip directory.
 * `saveFolder = ""` Add path to where figures will be saved. 
 * `nBins = 3` Number of bins used in the nonlinear compensation and detection method.
@@ -57,9 +58,9 @@ Configuration settings are stored in `config.json`:
 
 Required Matlab toolbox to run the scripts in this repository:
 
-* `Fieldtrip`
+* `Fieldtrip` [4].
 
-Temporal Response Functions (TRFs) were computed in Python, using `Eelbrain`.
+Temporal Response Functions (TRFs) were computed in Python, using `Eelbrain` [5].
 
 
 # Terms of use / License
@@ -70,3 +71,9 @@ This repository is free software, covered by the MIT License. However since they
 [1] J. Wilroth, E. Alickovic, M. A. Skoglund and M. Enqvist. "Nonlinearity Detection and Compensation for EEG-Based Speech Tracking," ICASSP 2024 - 2024 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), Seoul, Korea, Republic of, 2024, pp. 1811-1815, doi: 10.1109/ICASSP48485.2024.10448090.
 
 [2] J. Wilroth, E. Alickovic, M. A. Skoglund, C. Signoret, J. Rönnberg and M. Enqvist. "Improving Tracking of Selective Attention in Hearing Aid Users: The role of Noise Reduction and Nonlinearity Compensation". Submitted to eNeuro, December 2024.
+
+[3] Víctor Martínez-Cagigal (2024). Topographic EEG/MEG plot (https://www.mathworks.com/matlabcentral/fileexchange/72729-topographic-eeg-meg-plot), MATLAB Central File Exchange.
+
+[4] Oostenveld, R., Fries, P., Maris, E., Schoffelen, JM (2011). FieldTrip: Open Source Software for Advanced Analysis of MEG, EEG, and Invasive Electrophysiological Data. Computational Intelligence and Neuroscience, Volume 2011 (2011), Article ID 156869, doi:10.1155/2011/156869.
+
+[5] Christian Brodbeck, Proloy Das, Marlies Gillis, Joshua P Kulasingham, Shohini Bhattasali, Phoebe Gaston, Philip Resnik, Jonathan Z Simon (2023) Eelbrain, a Python toolkit for time-continuous analysis with temporal response functions eLife 12:e85012.
