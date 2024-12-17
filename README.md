@@ -2,6 +2,8 @@
 
 This repository contains the implementation of the method presented in article "Improving Tracking of Selective Attention in Hearing Aid Users: The role of Noise Reduction and Nonlinearity Compensation" [2].
 
+![Visual abstract](Figures/visualAbstract.png)
+
 #  Abstract
 Hearing impairment (HI) disrupts social interaction by hindering the ability to follow conversations in noisy environments. While hearing aids (HAs) with noise reduction (NR) partially address this, the ``cocktail-party problem'' persists, where individuals struggle to attend to specific voices amidst background noise. This study investigated how NR and an advanced signal processing method for compensating for nonlinearities in EEG signals can improve neural speech processing in HI listeners. Participants wore hearing aids with NR, either activated or deactivated, while focusing on target speech amidst competing masker speech and background noise. Analysis focused on temporal response functions to assess neural tracking of relevant target and masker speech. Results revealed enhanced neural responses (N1 and P2) to target speech, particularly in frontal and central scalp regions, when NR was activated. Additionally, a novel method compensated for nonlinearities in EEG data, leading to improved signal-to-noise ratio (SNR) and potentially revealing more precise neural tracking of relevant speech. This effect was most prominent in the left-frontal scalp region. Importantly, NR activation significantly improved the effectiveness of this method, leading to stronger responses and reduced variance in EEG data and potentially revealing more precise neural tracking of relevant speech. This study provides valuable insights into the neural mechanisms underlying NR benefits and introduces a promising EEG analysis approach sensitive to NR effects, paving the way for potential improvements in HAs.
 
@@ -27,9 +29,11 @@ This repository contains the following data:
 
 The repository contains two main Matlab scripts:
 
-* `main_BinningMethod.m` - Illustration of the nonlinear compensation and detection method (Figure 2 in [2]).
+* `main_BinningMethod.m` - Illustration of the nonlinear compensation and detection method (Figure 2 in [2]). Explanation of the variables used in the method is provided in the figure below.
 
 *  `main_Plotting.m` - Plotting scripts for Figures 4-10 in [2].
+
+![Binning method](Figures/variableExplanation_BinningMethod.jpg)
 
 Help functions are provided in the folder `helpFunctions`.
 
@@ -60,7 +64,7 @@ Temporal Response Functions (TRFs) were computed in Python, using `Eelbrain`.
 
 # Terms of use / License
 
-This repository is free software, covered by the Apache License 2.0. However since they have been mainly developed for academic use, the author would appreciate being given academic credit for it. Whenever you use this software to produce a publication or talk, please cite reference [2].
+This repository is free software, covered by the MIT License. However since they have been mainly developed for academic use, the author would appreciate being given academic credit for it. Whenever you use this software to produce a publication or talk, please cite reference [2].
 
 # References
 [1] J. Wilroth, E. Alickovic, M. A. Skoglund and M. Enqvist. "Nonlinearity Detection and Compensation for EEG-Based Speech Tracking," ICASSP 2024 - 2024 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), Seoul, Korea, Republic of, 2024, pp. 1811-1815, doi: 10.1109/ICASSP48485.2024.10448090.
